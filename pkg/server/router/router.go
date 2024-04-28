@@ -23,6 +23,7 @@ func (r *router) NewRouter() *gin.Engine {
 	router.POST("/signup", r.hrs.SignUp)
 	router.POST("/login", r.hrs.Login)
 
+	//for middleware
 	//router.Use(
 	//	gin.Recovery(),
 	//	gin.Logger(),
