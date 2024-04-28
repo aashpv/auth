@@ -1,4 +1,4 @@
-module AuthService
+module github.com/aashpv/auth
 
 go 1.20
 

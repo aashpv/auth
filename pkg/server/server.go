@@ -1,8 +1,8 @@
 package server
 
 import (
-	"AuthService/pkg/server/router"
 	"context"
+	"github.com/aashpv/auth/pkg/server/router"
 	"log"
 	"net/http"
 	"os"

@@ -1,9 +1,9 @@
 package db
 
 import (
-	"AuthService/pkg/models"
 	"database/sql"
 	"errors"
+	"github.com/aashpv/auth/pkg/models"
 	"log"
 )
 

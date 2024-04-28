@@ -1,8 +1,8 @@
 package service
 
 import (
-	"AuthService/pkg/db"
-	"AuthService/pkg/models"
+	"github.com/aashpv/auth/pkg/db"
+	"github.com/aashpv/auth/pkg/models"
 )
 
 type Service interface {

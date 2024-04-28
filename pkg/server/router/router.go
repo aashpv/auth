@@ -1,7 +1,7 @@
 package router
 
 import (
-	"AuthService/pkg/server/router/handlers"
+	"github.com/aashpv/auth/pkg/server/router/handlers"
 	"github.com/gin-gonic/gin"
 )
 

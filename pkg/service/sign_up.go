@@ -1,7 +1,7 @@
 package service
 
 import (
-	"AuthService/pkg/models"
+	"github.com/aashpv/auth/pkg/models"
 	"log"
 
 	"golang.org/x/crypto/bcrypt"

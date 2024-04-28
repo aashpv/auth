@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"AuthService/pkg/models"
-	"AuthService/pkg/service"
+	"github.com/aashpv/auth/pkg/models"
+	"github.com/aashpv/auth/pkg/service"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

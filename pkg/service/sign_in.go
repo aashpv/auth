@@ -1,9 +1,9 @@
 package service
 
 import (
-	"AuthService/pkg/models"
 	"errors"
 	"fmt"
+	"github.com/aashpv/auth/pkg/models"
 	"log"
 	"time"
 

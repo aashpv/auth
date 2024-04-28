@@ -1,7 +1,7 @@
 package db
 
 import (
-	"AuthService/pkg/models"
+	"github.com/aashpv/auth/pkg/models"
 	"github.com/jmoiron/sqlx"
 	_ "github.com/lib/pq"
 	"log"

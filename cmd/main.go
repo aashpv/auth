@@ -1,11 +1,11 @@
 package main
 
 import (
-	"AuthService/pkg/db"
-	"AuthService/pkg/server"
-	"AuthService/pkg/server/router"
-	"AuthService/pkg/server/router/handlers"
-	"AuthService/pkg/service"
+	"github.com/aashpv/auth/pkg/db"
+	"github.com/aashpv/auth/pkg/server"
+	"github.com/aashpv/auth/pkg/server/router"
+	"github.com/aashpv/auth/pkg/server/router/handlers"
+	"github.com/aashpv/auth/pkg/service"
 	"log"
 )
 
