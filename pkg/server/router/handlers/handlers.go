@@ -1,7 +1,6 @@
 package handlers
 
 import (
-	"errors"
 	"github.com/aashpv/auth/pkg/models"
 	"github.com/aashpv/auth/pkg/service"
 	"github.com/gin-gonic/gin"
@@ -31,18 +30,6 @@ func (h *handlers) SignUp(c *gin.Context) {
 
 	err := h.s.SignUp(user)
 	if err != nil {
-		if errors.Is(err, errors.New("invalid email")) {
-			c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": "invalid email"})
-			return
-		}
-		if errors.Is(err, errors.New("invalid password")) {
-			c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": "invalid password"})
-			return
-		}
-		if errors.Is(err, errors.New("invalid phone number")) {
-			c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": "invalid phone number"})
-			return
-		}
 		c.AbortWithStatusJSON(http.StatusInternalServerError, gin.H{"error": "failed to create user"})
 		return
 	}

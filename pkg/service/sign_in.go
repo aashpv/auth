@@ -11,9 +11,6 @@ import (
 )
 
 func (s *service) SignIn(email, password string) (jwtToken string, err error) {
-	if email == "" || password == "" {
-		return "", errors.New("email or password is empty")
-	}
 	user, err := s.pgs.Get(email)
 	if err != nil {
 		if errors.Is(err, errors.New("user does not exist")) {
