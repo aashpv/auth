@@ -8,7 +8,7 @@ import (
 )
 
 func (p *postgres) Get(email string) (user models.User, err error) {
-	err = p.db.Get(&user, "SELECT password FROM users WHERE email = $1", email)
+	err = p.db.Get(&user, "SELECT email, password, role FROM users WHERE email = $1", email)
 
 	if err != nil {
 		if errors.Is(err, sql.ErrNoRows) {
