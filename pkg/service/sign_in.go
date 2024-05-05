@@ -30,8 +30,9 @@ func (s *service) SignIn(email, password string) (jwtToken string, err error) {
 
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, models.JwtClaims{
 		Email: user.Email,
+		Role:  user.Role,
 		StandardClaims: jwt.StandardClaims{
-			ExpiresAt: time.Now().Add(time.Hour * 2).Unix(),
+			ExpiresAt: time.Now().Add(time.Minute * 15).Unix(),
 			IssuedAt:  time.Now().Unix(),
 		},
 	})
